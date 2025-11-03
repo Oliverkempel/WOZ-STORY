@@ -14,8 +14,8 @@
         public Scene? CurrentScene { get; set; }
         StoryBuilder StoryBuilder { get; set; }
 
+        // Dependency injection of UIHandler
         public IUIHandler UIHandler { get; set; }
-
         public StoryHandler(IUIHandler uiHandler)
         {
             UIHandler = uiHandler;
